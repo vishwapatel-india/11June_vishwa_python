@@ -5,7 +5,7 @@ if a!=0 and b!=0:
     if a>b: #max
         print('A is maxinmum',a*b)
     
-    elif a<b:  #min
+    else a<b:  #min
         print("A is minimun", a-b)
 
 else:
