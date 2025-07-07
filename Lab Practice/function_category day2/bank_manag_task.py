@@ -1,35 +1,51 @@
 """Bank MAnagement system______
-========================================
+=======================================================
 1) Account operation= A/c no,holder name,type
 2) Deposit=min2000
 3)withdrawal= moret han balance
-4)satement=ac no/ac holder/ac type/balance"""
+4)satement=ac no/ac holder/ac type/balance
+========================================================
+"""
+acno=int(input("Enter account number:"))
+acname=input("Enter account holder's name:")
+actype=input("Enter account type:")
+Balance=0.0000
 
-#function defining
-def account(no,name,type):
+#function defining-task-1
+def account(acno,acname,actype):
+    return acno,acname,actype
 
-    #withdrwl(condition):
-    #stment(acno,acname,actype,bal):
-    return no,name,type 
+def acc():
+    x=account(acno,acname,actype)
+    print("Your account number:",x[0])
+    print("Your account name:",x[1])
+    print("Your account type:",x[2])
 
-def account_details():
-    x=account(1234,'vishwa','savings')
-    print("Acc number:",x[0])
-    print("Acc name:",x[1])
-    print("Acc type:",x[2])
+acc()
 
-account_details()
-
-def deposit(min):
-    return min
-
-def dep():
-    y=deposit(5000)
-    if y<2000:
-        print('Error!! amt should be more than 2000')
+#function defining task-2
+def deposit():
+    global Balance
+    Balance=float(input("Enter your amt you want to deposit:"))
+    if Balance>=2000:
+        print("Your current balnce:",Balance)
     else:
-        print('Total amt:')
+        print("Min amt needs to be 2000")
+        exit()
 
-dep()
+def withdraw():
+    global Balance
+    with1=float(input("Enter the amt you want to withdraw:"))
+    newbal = Balance-with1
+    if with1 <= Balance:
+        print("The amount needs to be greater than current balance amount")
+    else:
+        print(newbal)
+        exit()
 
+def statement():
+    acc()
+    deposit()
+    withdraw()
 
+statement()
