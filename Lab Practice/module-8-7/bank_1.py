@@ -7,6 +7,10 @@ print("Account holder's name:",x)
 
 from bank_module1 import *
 acc_details()
+dep()
+withdraw()
+
+
 
 
 
