@@ -1,0 +1,14 @@
+ID:101
+NAME:vishwa
+CITY:rjkt
+ID:
+NAME:
+CITY:
+ID:<built-in function id>
+ID:<built-in function id>
+
+Inserted_at:2025-07-18 10:55:10.060217
+ID:739
+NAME:hardik
+CITY:rajkot
+-----------------------
