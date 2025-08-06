@@ -27,11 +27,6 @@ def multiply():
 def division():
     print("Division:",int(v1.get())/int(v2.get()))
 
-"""tkinter.Checkbutton(text="Add",bg="black",fg="white",font="dubai 12 bold").grid(row=5,column=0,sticky="w")
-tkinter.Checkbutton(text="Sub",bg="black",fg="white",font="dubai 12 bold").grid(row=6,column=1,sticky="w")
-tkinter.Checkbutton(text="Mul",bg="black",fg="white",font="dubai 12 bold").grid(row=7,column=2,sticky="w")
-tkinter.Checkbutton(text="Div",bg="black",fg="white",font="dubai 12 bold").grid(row=8,column=3,sticky="w")
-"""
 
 tkinter.Button(text="Add",font="dubai 15 bold",command=addition).place(x=50,y=100)
 tkinter.Button(text="Sub",font="dubai 15 bold",command=subtraction).place(x=120,y=100)
