@@ -16,7 +16,8 @@ v2.grid(row=1,column=1,sticky="w")
 
 #button:
 def addition():
-    print("Addition:",int(v1.get())+int(v2.get()))
+    int(v1.get())+int(v2.get())
+    
 
 def subtraction():
     print("Subtraction:",int(v2.get())-int(v2.get()))
