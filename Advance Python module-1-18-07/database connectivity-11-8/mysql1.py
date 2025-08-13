@@ -25,10 +25,24 @@ except Exception as e:
     print(e)
 """
 #update data
-update= "update studinfo set name='khushbu',city='banglore' where id=3" 
+"""update= "update studinfo set name='khushbu',city='banglore' where id=3" 
 try:
     cr.execute(update)
     v.commit()
     print("Record inserted")
 except Exception as e:
     print(e)
+"""
+#show data
+show="select * from studinfo"
+try:
+    cr.execute(show)
+    data=cr.fetchall()
+    #print(data)
+
+    for i in data:
+        print(i)
+    
+except Exception as e:
+    print(e)
+
