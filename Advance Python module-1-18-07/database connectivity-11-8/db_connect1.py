@@ -7,7 +7,7 @@ except Exception as e:
     print(e)
 
 #table create
-tbl_create="create table studinfo(id integer primary key autoincrement," \
+tbl_create="create table studinfo(id integer primary key autoincrement," 
 "name text, city text)"
 
 try:
